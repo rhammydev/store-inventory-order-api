@@ -12,5 +12,5 @@ public class Product
     
     public int StockQuantity { get; set; }
     
-    public DateTime CreatedAt { get; set; }
+    public DateTime CreatedAt { get; set; } =  DateTime.UtcNow;
 }

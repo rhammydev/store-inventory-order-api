@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zJNSfRPnHvFDQsmAizcRjqVM77h5G/kd0U42is02hXI=",
+  "Source": "StoreInventoryOrderAPI",
+  "BasePath": "_content/StoreInventoryOrderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

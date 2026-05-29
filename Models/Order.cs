@@ -14,5 +14,5 @@ public class Order
     
     public string Status { get; set; }
     
-    public DateTime OrderAt { get; set; }
+    public DateTime OrderAt { get; set; } = DateTime.UtcNow;
 }
