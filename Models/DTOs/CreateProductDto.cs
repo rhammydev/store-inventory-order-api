@@ -1,6 +1,6 @@
 namespace StoreInventoryOrderAPI.Models.DTOs;
 
-public class CreateProduct
+public class CreateProductDto
 {
     public string Name { get; set; }
     
