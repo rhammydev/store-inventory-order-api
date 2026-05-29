@@ -104,6 +104,13 @@ public class ProductRepository : IProductRepository
             throw new Exception($"Product with id: {id} not found");
         }
         
+        // product with existing order can't be deleted
+        var order = await _dbContext.Orders.FirstOrDefaultAsync(o => o.ProductId == id);
+        if (order != null)
+        {
+            throw new Exception("You cannot delete a product that has existing orders");
+        }
+        
         _dbContext.Products.Remove(product);
         await _dbContext.SaveChangesAsync();
         return true;
